@@ -1,0 +1,51 @@
+
+:root {
+    --fondo-principal: rgba(9, 14, 44, 0.935);
+    --withe: #fff;
+    --black: #000;
+    --font-sec: rgb(134, 139, 143);
+
+}
+
+body {
+    background-color: var(--fondo-principal) ;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--withe);
+}
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.nav-a {
+    text-decoration: none;
+    color: var(--font-sec) ;
+    font-size: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+footer {
+    background-color: var(--withe);
+    background-size: cover;
+    padding: 5rem;
+}
+.nav-bg {
+    background-color: var(--black);
+}
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+.main {
+    display: flex;
+    margin: 0 auto;
+    width: 120rem;
+}
+.main__section {
+    margin: 1rem;
+    background-color: var(--withe);
+    padding: 0rem 1rem 20rem 1rem;
+    
+}
