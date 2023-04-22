@@ -1,4 +1,4 @@
-
+/*variables*/
 :root {
     --fondo-principal: rgba(9, 14, 44, 0.935);
     --withe: #fff;
@@ -6,7 +6,7 @@
     --font-sec: rgb(134, 139, 143);
 
 }
-
+/*objetos html*/
 body {
     background-color: var(--fondo-principal) ;
 }
@@ -19,29 +19,37 @@ h2 {
     text-align: center;
     font-size: 1.5rem;
 }
+footer {
+    background-color: var(--withe);
+    background-size: cover;
+    padding: 1rem;
+    
+}
+/*Navegacion*/
+.nav-bg {
+    background-color: var(--black);
+    background-size: cover;
+}
+.contenedor {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .nav-a {
     text-decoration: none;
     color: var(--font-sec) ;
     font-size: 1rem;
     padding-right: 1rem;
     text-transform: uppercase;
+    background-color: var(--fondo-principal);
 }
-footer {
-    background-color: var(--withe);
-    background-size: cover;
-    padding: 5rem;
-}
-.nav-bg {
-    background-color: var(--black);
-}
-.contenedor {
-    width: 120rem;
-    margin: 0 auto;
-}
+/*body*/
 .main {
     display: flex;
-    margin: 0 auto;
-    width: 120rem;
+    margin: 0 10rem;
+    flex-direction: row;
+    justify-content: center;
 }
 .main__section {
     margin: 1rem;
@@ -49,3 +57,9 @@ footer {
     padding: 0rem 1rem 20rem 1rem;
     
 }
+/*footer*/
+.footer__subBg {
+    text-align: end;
+    
+}
+
