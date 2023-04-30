@@ -22,20 +22,48 @@ h1 {
 .main__header {
     background-color: var(--Backg-secundario);
     height: 5rem;
-    width: 60rem;
+    width: 100rem;
 }
 /*body*/
 .main__body {
     background-color: var(--blanco);
     display: flex;
     justify-content: center;
-    width: 40rem;
+    width: 50rem;
     height: 50rem;
 }
 .form {
-    border: 1px;
+    border-color: var(--negro);
+    border: solid;
+    border-width: 3px;
+    border-radius: 2%;
+}
+.form__text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.form__label {
+    margin-left: 3rem;
+}
+.form__input {
+    margin-left: 4rem;
+}
+.form__button {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.resultado {
+    margin-left: 4rem;
+    border-color: var(--negro);
+    border: solid;
+    width: 15rem;
+    height: 4rem;
+    border-width: 1px;
+    border-radius: 2%;
 }
 /*footer*/
 footer {
-    background-color: var();
+    background-color: var(--Backg-secundario);
+    width: 100rem;
+    height: 5rem;
 }

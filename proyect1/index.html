@@ -15,13 +15,23 @@
         </div>
     </header>
         <section class="main__body">
-            <form class="form" action="#" method="get">
-                <p>Necesitas obtener los siguientes parámetros del paciente:</p>
-                <label for="name"></label>
+            <form class="form" id="form">
+                <p class="form__text">Necesitas obtener los siguientes parámetros del paciente:</p>
+                <label class="form__label" for="kilo">Peso en kg:</label><br>
+                <input class="form__input" type="number" step="any" name="kilo" id="kilo" required>Kg<br>
+                <label class="form__label" for="altura">Altura en metros:</label><br>
+                <input class="form__input" type="number" step="any" name="altura" id="metros" required>m <br>
+                <input class="form__button" type="submit" value="Calcular" id="boton">
+                <p class="form__text">Tiene un resultado de:</p>
+                <div class="resultado" id="resultado">
+
+                </div>
             </form>
         </section>
     <footer>
+        <section>
 
+        </section>
     </footer>
 <script src="scripts/script.js"></script>
 </body>
