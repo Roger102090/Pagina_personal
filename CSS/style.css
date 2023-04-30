@@ -81,11 +81,20 @@ footer {
     height: auto;
     width: 30rem;
 }
+.texto_p {
+    padding: 1rem;
+}
+.testo_p__a {
+    text-decoration: none;
+    color: var(--font-sec) ;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
 /*footer*/
 .footer__subBg {
     text-align: end;
-    width: auto;
-    height: 1rem;
+    width: 100%;
+    height: 4rem;
     margin-bottom: 0;
     
 }

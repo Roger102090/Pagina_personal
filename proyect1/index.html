@@ -11,26 +11,66 @@
 <body>
     <header class="main__header">
         <div>
-            <h1>Calculadra de IMC</h1>
+            <h1>Calculadora de IMC</h1>
         </div>
     </header>
         <section class="main__body">
             <form class="form" id="form">
                 <p class="form__text">Necesitas obtener los siguientes parámetros del paciente:</p>
-                <label class="form__label" for="kilo">Peso en kg:</label><br>
-                <input class="form__input" type="number" step="any" name="kilo" id="kilo" required>Kg<br>
-                <label class="form__label" for="altura">Altura en metros:</label><br>
-                <input class="form__input" type="number" step="any" name="altura" id="metros" required>m <br>
+                <label class="form__label" for="kilo">Peso en kg:</label>
+                <input class="form__input" type="number" step="any" name="kilo" id="kilo" required>
+                <label class="form__label" for="altura">Altura en metros:</label>
+                <input class="form__input" type="number" step="any" name="altura" id="metros" required>
                 <input class="form__button" type="submit" value="Calcular" id="boton">
                 <p class="form__text">Tiene un resultado de:</p>
                 <div class="resultado" id="resultado">
-
-                </div>
+               </div>          
             </form>
+            <div>
+                <table class="tabla" border="1" cellspacing="0">
+                    <caption>Tabla de IMC</caption>
+                    <tr>
+                        <td>Clasificación de IMC</td>
+                        <td>IMC</td>
+                    </tr>
+                    <tr>
+                        <td>Peso bajo</td>
+                        <td>Menos de 18.5 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td>Peso normal</td>
+                        <td>18.5 - 24.9 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrepeso</td>
+                        <td>25 - 29.9 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidad</td>
+                        <td>30 - 34.5 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidad grado 2</td>
+                        <td>35 - 39.9 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidad grado 3</td>
+                        <td>Mas de 40 kg/m2</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     <footer>
+        <a href="../index.html" class="footer__home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg>
+        </a>
         <section>
-
+            
         </section>
     </footer>
 <script src="scripts/script.js"></script>

@@ -24,6 +24,7 @@ form.addEventListener('submit', function res(event) {
         p = parseInt(peso);
         const resultado = document.createElement('P');
         resultado.textContent = imc2;
+        resultado.classList.add ('reslutado__submit')
         res_form.appendChild(resultado);
     }
    
