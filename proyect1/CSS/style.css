@@ -1,0 +1,22 @@
+/*variables*/
+:root {
+    --Backg-secundario: rgb(24, 117, 224);
+    --Backg-principal: rgb(88, 171, 204);
+    --blanco: #ffff;
+    --negro: #0000;
+
+}
+/*Elementos del html*/
+body {
+    background-color: var(--Backg-secundario);
+}
+h1 {
+    text-align: center;
+    margin-top: 1px;
+    padding-top: 1rem;
+}
+/*header*/
+.main__header {
+    background-color: var(--Backg-principal);
+    height: 10rem;
+}
