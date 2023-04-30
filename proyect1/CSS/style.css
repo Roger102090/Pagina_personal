@@ -27,6 +27,9 @@ h1 {
     border-width: 2px;
 }
 /*body*/
+.body_row{
+    display: flex;
+}
 .main__body {
     background-color: var(--blanco);
     display: flex;
@@ -74,7 +77,17 @@ h1 {
     padding-left: .5rem;
     font-size: 1.4rem;
 }
-
+.div_advice {
+    margin: 1rem;
+    border-color: var(--negro);
+    border: solid;
+    width: 20rem;
+    height: 15rem;
+    border-width: 1px;
+    border-radius: 2%;
+    background-color: var(--Backg-secundario);
+    color: var(--blanco);
+}
 .tabla {
     margin: 1rem;
     border: solid;
