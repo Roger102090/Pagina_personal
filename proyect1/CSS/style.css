@@ -65,7 +65,7 @@ h1 {
     margin: 1rem;
 }
 .resultado {
-    margin-left: 4rem;
+    margin-left: 3rem;
     border-color: var(--negro);
     border: solid;
     width: 15rem;
@@ -77,6 +77,12 @@ h1 {
     padding-left: .5rem;
     font-size: 1.4rem;
 }
+.tabla {
+    margin: 1rem;
+    border: solid;
+    border-width: 2px;
+}
+/*Advice*/
 .div_advice {
     margin: 1rem;
     border-color: var(--negro);
@@ -86,12 +92,22 @@ h1 {
     border-width: 1px;
     border-radius: 2%;
     background-color: var(--Backg-secundario);
-    color: var(--blanco);
+    color: var(--blanco);}
+.div_advice__p1 {
+    display: block;
+    width: 25.5ch;
+    padding-left: 1rem;
+    white-space: nowrap;
+    border-right: 1px solid;
+
+    animation: typing 1.5s steps(30), blink .5s infinite step-end alternate;
+    overflow: hidden;
 }
-.tabla {
-    margin: 1rem;
-    border: solid;
-    border-width: 2px;
+@keyframes typing {
+    from { width: 0}
+}
+@keyframes blink {
+    50% { border-color: transparent}
 }
 /*footer*/
 footer {
