@@ -64,6 +64,7 @@ h1 {
     width: 7rem;
     margin: 1rem;
 }
+/* //respuesta de la calculadora */
 .resultado {
     margin-left: 3rem;
     border-color: var(--negro);
@@ -76,6 +77,7 @@ h1 {
 .reslutado__submit {
     padding-left: .5rem;
     font-size: 1.4rem;
+    width: 4ch;
 }
 .tabla {
     margin: 1rem;
@@ -100,7 +102,27 @@ h1 {
     white-space: nowrap;
     border-right: 1px solid;
 
-    animation: typing 1.5s steps(30), blink .5s infinite step-end alternate;
+    animation: typing 1.5s steps(25), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+.div_advice__p2 {
+    display: block;
+    width: 22.5ch;
+    padding-left: 1rem;
+    white-space: nowrap;
+    border-right: 1px solid;
+    font-size: 1.2rem;
+    animation: typing 1.5s steps(22), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+.div_advice__p3 {
+    display: block;
+    width: 17.5ch;
+    padding-left: 1rem;
+    white-space: nowrap;
+    border-right: 1px solid;
+    font-size: 1.4rem;
+    animation: typing 1.5s steps(17), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
 @keyframes typing {

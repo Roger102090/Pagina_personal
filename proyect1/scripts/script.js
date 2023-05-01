@@ -19,8 +19,9 @@ resultado.textContent = 0;
 res_form.appendChild(resultado);
 //Elemento inicial del resultado del recuerdo de consejos
 const adv__imc = document.createElement('P');
-adv__imc.classList.add('div_advice__p1');
-adv__imc.textContent = 0;
+adv__imc.classList.add('div_advice__p2');
+adv__imc.textContent = 'Debes iniciar la calculadora';
+adv_resultado.appendChild(adv__imc);
 
 //trigger del boton del formulario
 form.addEventListener('submit', function res(event) {
@@ -31,34 +32,26 @@ form.addEventListener('submit', function res(event) {
     imc2 = p/imc1;
     let verif = document.querySelector('#resultado');
     let verif1 = verif.value; 
+    let verif2 = document.querySelector('#adv_r');
+    let verif_2 = verif2.value; 
     verif1 = parseInt(verif);
-    if  (verif1 == "" || verif1 == 0) {
-        res_form.removeChild(resultado);
-    }else {   
-        
-    if ((isNaN(p) || !isFinite(p)) || (isNaN(a) || !isFinite(a)) || (p > 300 || a > 3)) {
-        alert ('Debes de ingresar un valor numérico valido, Así como el peso y altura reales del paciente');
-    }else {
-        a = parseInt(altura);
-        p = parseInt(peso);
-        resultado.textContent = imc2;
-        resultado.classList.add('reslutado__submit');
-        res_form.appendChild(resultado);      
-        
-        // n = imc2;
-        // n1 = p;
-        // while (n <= 25) {
-        //     n = n1/imc1;
-        //     n1 = n1-.5;
-        // };
-        // const advice = document.createElement('P');
-        // advice.textContent = 'El resultado del calculo fue de:<br>', imc2, '<br>por lo que es recomendable que se tenga un peso de:<br>', n1, 
-        //pendiente
-    }}
-   
-} )
-
-
-
-
-
+        if  (verif1 == "" || verif1 == 0 || verif_2 == 'Debes iniciar la calculadora') {
+                res_form.removeChild(resultado);
+                adv_resultado.removeChild(adv__imc);
+            }else {   
+                    
+                if ((isNaN(p) || !isFinite(p)) || (isNaN(a) || !isFinite(a)) || (p > 300 || a > 3)) {
+                    alert ('Debes de ingresar un valor numérico valido, Así como el peso y altura reales del paciente');
+                }else {
+                    a = parseInt(altura);
+                    p = parseInt(peso);
+                    //Se crea la respuestas
+                    resultado.textContent = imc2;
+                    resultado.classList.add('reslutado__submit');
+                    res_form.appendChild(resultado);
+                    //Se crea la respuesta de adv
+                    adv__imc.classList.add('div_advice__p3');
+                    adv__imc.textContent = imc2;
+                    adv_resultado.appendChild(adv__imc);
+        }}
+});
