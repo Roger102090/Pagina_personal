@@ -125,8 +125,24 @@ h1 {
     animation: typing 1.5s steps(17), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
+.div_advice__p4 {
+    display: block;
+    width: 37ch;
+    padding-left: 1rem;
+    white-space: nowrap;
+    border-right: 1px solid;
+    font-size: 1rem;
+    animation: typing 1.5s 1.5s  steps(37) backwards, blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
 @keyframes typing {
-    from { width: 0}
+    0% { width: 0;
+    color: var(--blanco);
+    };
+    100% {
+        color: var(--blanco);
+    }
+
 }
 @keyframes blink {
     50% { border-color: transparent}
