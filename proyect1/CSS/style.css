@@ -104,6 +104,8 @@ h1 {
     border-right: 1px solid transparent;
     overflow: hidden;
     font-size: 1rem;
+
+    justify-content: center;
 }
 .div_advice__p1 {
     width: 25.5ch;
@@ -114,8 +116,11 @@ h1 {
     font-size: 1.2rem;
     animation: typing 1.5s 1.8s steps(22) backwards, blink .5s 1.6s 4 step-end alternate;
 } 
+/* p3 = la respuesta del primer cuadro de advice */
 .div_advice__p3 {
     width: 4.5ch;    
+    margin-left: auto;
+    margin-right: auto;
     animation: typing .5s steps(5), blink .5s 15 step-end alternate;
 }
 .div_advice__p4 {
@@ -132,22 +137,31 @@ h1 {
     font-size: 1.2rem;
     animation: typing 1.5s 4.7s steps(22) backwards, blink .5s 4.7s 4 step-end alternate;
 }
+/* p1 al g4 = la respuesta del segundo cuadro de advice */
 .div_advice__g1 {
+    margin-left: auto;
+    margin-right: auto;
     width: 7.7ch;
     font-size: 1.2rem;
     animation: typing .5s steps(8) backwards, blink .5s 15 step-end alternate;
 }
 .div_advice__g2 {
+    margin-left: auto;
+    margin-right: auto;
     width: 10ch;
     font-size: 1.2rem;
     animation: typing 1s steps(11) backwards, blink .5s 15 step-end alternate;
 }
 .div_advice__g3 {
+    margin-left: auto;
+    margin-right: auto;
     width: 8.5ch;
     font-size: 1.2rem;
     animation: typing .5s steps(9) backwards, blink .5s 15 step-end alternate;
 }
 .div_advice__g4 {
+    margin-left: auto;
+    margin-right: auto;
     width: 14ch;
     font-size: 1.2rem;
     animation: typing 1s steps(15) backwards, blink .5s 15 step-end alternate;

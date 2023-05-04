@@ -5,11 +5,11 @@ const form = document.querySelector('#form');
 const res_form = document.querySelector('#resultado')
 const adv_resultado = document.querySelector('#adv_r1');
 const adv_grupo = document.querySelector('#adv_r2');
+//confirmación de la conección con html
 console.log(peso);
 console.log(altura);
 console.log(res_form);
 console.log(adv_grupo);
-
 //Ceración de variantes
 let p;
 let a; 
@@ -38,7 +38,6 @@ adv__grupo.classList.add('div_advice__p5');
 adv__grupo.classList.add('div_advice__animation');
 adv__grupo.textContent = 'Debes iniciar la calculadora';
 adv_grupo.appendChild(adv__grupo);
-
 //trigger del boton del formulario
 form.addEventListener('submit', function res(event) {
     //eovitar que se refresque la pagina
@@ -55,10 +54,18 @@ form.addEventListener('submit', function res(event) {
     let verif1 = verif.value; 
     let verif2 = document.querySelector('#adv_r1');
     let verif_2 = verif2.value; 
+    let verif3 = document.querySelector('#adv_r2');
+    let verif_3 = verif3.valueM
     verif1 = parseInt(verif);
-    if  (verif1 == "" || verif1 == 0 || verif_2 == 'Debes iniciar la calculadora') {
+    //remover las clases de la segunda respuesta debido a que las respuestas dienen diferentes width
+    adv__grupo.classList.remove('div_advice__g1');
+    adv__grupo.classList.remove('div_advice__g2');
+    adv__grupo.classList.remove('div_advice__g3');
+    adv__grupo.classList.remove('div_advice__g4');
+        if  (verif1 == "" || verif1 == 0 || verif_2 == 'Debes iniciar la calculadora' || verif_3 == 'Debes iniciar la calculadora' || verif_3 == g1 || verif_3 == g2 || verif_3 == g3 || verif_3 == g4 || verif_3 == g5 || verif_3 == g6 ) {
             res_form.removeChild(resultado);
             adv_resultado.removeChild(adv__imc);
+           
             adv_grupo.removeChild(adv__grupo);
         }else {   
         
@@ -102,18 +109,20 @@ form.addEventListener('submit', function res(event) {
                                 adv_grupo.appendChild(adv__grupo);
                             }else{
                                 if(imc2 < 40) {
+                                    adv__grupo.classList.add('div_advice__g4');
                                     adv__grupo.textContent = g5;
                                     adv_grupo.appendChild(adv__grupo);
-                                }else{                            
+                                }else{          
+                                    adv__grupo.classList.add('div_advice__g4');                  
                                     adv__grupo.textContent = g6;
                                     adv_grupo.appendChild(adv__grupo);
-                                }
-                            }
-                        }
-                    }
-                }
+                                };
+                            };
+                        };
+                    };
+                };
 
-            }
-        }
+            };
+        };
     }
 );
