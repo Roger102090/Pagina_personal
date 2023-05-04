@@ -77,7 +77,7 @@ h1 {
 .reslutado__submit {
     padding-left: .5rem;
     font-size: 1.4rem;
-    width: 4ch;
+    text-align: center;
 }
 .tabla {
     margin: 1rem;
@@ -95,51 +95,62 @@ h1 {
     border-radius: 2%;
     background-color: var(--Backg-secundario);
     color: var(--blanco);}
+
+/*animacion del recuadro advice*/
 .div_advice__animation {
     display: block;
     padding-left: 1rem;
     white-space: nowrap;
     border-right: 1px solid transparent;
     overflow: hidden;
+    font-size: 1rem;
 }
 .div_advice__p1 {
     width: 25.5ch;
-    animation: typing 1.5s steps(25), blink .5s 15 step-end alternate;
+    animation: typing 1.5s steps(25), blink .5s 3 step-end alternate;
 }
 .div_advice__p2 {
     width: 22.5ch;
-    font-size: 1.2rem; /*SI CAMBIA*/
-    animation: typing 1.5s steps(22), blink .5s 15 step-end alternate;/*cambia*/
+    font-size: 1.2rem;
+    animation: typing 1.5s 1.8s steps(22) backwards, blink .5s 1.6s 4 step-end alternate;
 } 
-.div_advice__p2 {
-    display: block;
-    width: 22.5ch;
-    padding-left: 1rem;
-    white-space: nowrap;
-    border-right: 1px solid;
-    font-size: 1.2rem; /*SI CAMBIA*/
-    animation: typing 1.5s steps(22), blink .5s 15 step-end alternate;/*cambia*/
-    overflow: hidden;
-}
 .div_advice__p3 {
-    display: block;
-    width: 17.5ch;
-    padding-left: 1rem;
-    white-space: nowrap;
-    border-right: 1px solid;
-    font-size: 1.4rem;
-    animation: typing 1.5s steps(17), blink .5s 15 step-end alternate;
-    overflow: hidden;
+    width: 4.5ch;    
+    animation: typing .5s steps(5), blink .5s 15 step-end alternate;
 }
 .div_advice__p4 {
-    display: block;
     width: 37ch;
-    padding-left: 1rem;
-    white-space: nowrap;
-    border-right: 1px solid;
-    font-size: 1rem;
-    animation: typing 1.5s 1.5s  steps(37) backwards, blink .5s infinite step-end alternate;
-    overflow: hidden;
+    animation: typing 1.5s 3.3s  steps(37) backwards, blink .5s 3.3s 4 step-end alternate;
+}
+.div_advice__p5 {
+    width: 22.5ch;
+    font-size: 1.2rem;
+    animation: typing 1.5s 4.7s steps(22) backwards, blink .5s 4.7s 4 step-end alternate;
+}
+.div_advice__p6 {
+    width: 22.5ch;
+    font-size: 1.2rem;
+    animation: typing 1.5s 4.7s steps(22) backwards, blink .5s 4.7s 4 step-end alternate;
+}
+.div_advice__g1 {
+    width: 7.7ch;
+    font-size: 1.2rem;
+    animation: typing .5s steps(8) backwards, blink .5s 15 step-end alternate;
+}
+.div_advice__g2 {
+    width: 10ch;
+    font-size: 1.2rem;
+    animation: typing 1s steps(11) backwards, blink .5s 15 step-end alternate;
+}
+.div_advice__g3 {
+    width: 8.5ch;
+    font-size: 1.2rem;
+    animation: typing .5s steps(9) backwards, blink .5s 15 step-end alternate;
+}
+.div_advice__g4 {
+    width: 14ch;
+    font-size: 1.2rem;
+    animation: typing 1s steps(15) backwards, blink .5s 15 step-end alternate;
 }
 @keyframes typing {
     0% { width: 0;
