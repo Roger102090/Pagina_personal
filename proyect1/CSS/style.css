@@ -64,7 +64,7 @@ h1 {
     width: 7rem;
     margin: 1rem;
 }
-/* //respuesta de la calculadora */
+/*Respuesta de la calculadora*/
 .resultado {
     margin-left: 3rem;
     border-color: var(--negro);
@@ -84,13 +84,17 @@ h1 {
     border: solid;
     border-width: 2px;
 }
-/*Advice*/
+/*Advice cuadro 1*/
+.section_advice {
+    display: flex;
+    flex-direction: column;    
+}
 .div_advice {
     margin: 1rem;
     border-color: var(--negro);
     border: solid;
     width: 20rem;
-    height: 15rem;
+    height: 16rem;
     border-width: 1px;
     border-radius: 2%;
     background-color: var(--Backg-secundario);
@@ -179,11 +183,29 @@ h1 {
     0% {border-color: var(--blanco);}
     50% { border-color: transparent}
 }
+/*Advice cuadro 2*/
+.div_advice__texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-color: var(--negro);
+    border: solid;
+    width: 20rem;
+    height: 16rem;
+    border-width: 1px;
+    border-radius: 2%;
+    background-color: var(--Backg-secundario);
+    color: var(--blanco);}
+.div_advice__p7 {
+    padding: 1rem;
+    margin: 1rem;
+}
 /*footer*/
 footer {
     background-color: var(--Backg-secundario);
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: right;
