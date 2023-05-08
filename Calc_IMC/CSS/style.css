@@ -192,14 +192,16 @@ h1 {
     border-color: var(--negro);
     border: solid;
     width: 20rem;
-    height: 16rem;
+    height: 25rem;
     border-width: 1px;
     border-radius: 2%;
     background-color: var(--Backg-secundario);
     color: var(--blanco);}
 .div_advice__p7 {
+    text-align: justify;
+    font-size: small;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0;
 }
 /*footer*/
 footer {

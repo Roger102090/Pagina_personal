@@ -83,12 +83,14 @@ footer {
 }
 .texto_p {
     padding: 1rem;
+    margin: 0;
 }
 .testo_p__a {
     text-decoration: none;
     color: var(--font-sec) ;
     font-size: 1rem;
     text-transform: uppercase;
+    padding-left:1rem;
 }
 /*footer*/
 .footer__subBg {
