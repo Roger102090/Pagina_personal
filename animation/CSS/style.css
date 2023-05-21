@@ -1,0 +1,12 @@
+/* variables */
+:root {
+    --colorPrimario: #5E94F4;
+}
+
+.circle{
+    margin: 3rem 0 0 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: var(--colorPrimario);
+}
