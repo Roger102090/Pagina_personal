@@ -1,12 +1,79 @@
 /* variables */
 :root {
+    --bgPrincipal: #0D1117;
+    --bgSecundario: #161B22;
     --colorPrimario: #5E94F4;
-}
 
+}
+/* Elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bgPrincipal);
+}
+/* Header */
+.header{
+   display: flex;
+   flex-direction: row;
+justify-content: end;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Objetos */
+.moon{
+    width: 1px;
+    height: 1px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: white;
+ 
+    animation: normal infinite linear mover2 5s;  
+    
+}
 .circle{
-    margin: 3rem 0 0 2rem;
-    width: 15rem;
-    height: 15rem;
+
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: var(--colorPrimario);
+    background-color: #1b1f5f;
+   
+    
+/* animation: normal infinite linear mover 5s; */
+/* animation es la forma corto de animation no hay orden solo en el tiempo, el primero es diempre para la duración y el segundo es para el diley */
+
+    /*animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; /*interation count cuanteas veces se debe animar*/
+    /*animation-direction: normal; /*alternate anima y anima en reversa 
+    /*animation-fill-mode: both; /*Se queda con los parametros del final de la animación backwars se queda con la inical*/
+   /* animation-delay: 2s; 
+    animation-timing-function: ease;/*ease aumenta a la vel hasta la mitad del recorrido o tiempo luego disminiye, ease in solo aumenta, ease in out comienza lento, acelera y disminuye, ease out inica rapido y termina lento*/
 }
+.circle:hover{
+    animation-play-state: paused;
+}
+
+@keyframes mover {
+    0%{
+    transform: rotate(0deg) translate(1000%);     
+    }    
+    100%{
+        transform: rotate(360deg) translateY(1000%);         
+    }   
+}
+@keyframes mover2 {
+    0%{
+    transform: rotate(0deg) translate(1rem, 1rem);     
+    }    
+    100%{
+        transform: rotate(360deg) translate(1rem, 1rem);         
+    }   
+}
+/* Footer */
